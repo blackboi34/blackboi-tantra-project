@@ -1,0 +1,46 @@
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-weight: bold
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.button {
+    padding: 5px 10px; 
+    font-size: 14px; 
+    max-width: 100px; /* Adjust as needed for better responsiveness */
+    border: none;
+    background-color: #000; 
+    color: #fff; 
+    border-radius: 0.75rem; 
+    cursor: pointer;
+    display: block; 
+    margin:  auto; 
+    text-align: center; /* Center text inside the button */
+    text-decoration: none; /* Ensure no underlining if used as a link */
+}
+
+.button:hover {
+    background-color: #333; 
+    /* Optional: Add a transition for smoother effect */
+    transition: background-color 0.3s ease;
+}

@@ -1,0 +1,142 @@
+/* Container Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+    justify-items: center;
+    text-align: center;
+}
+
+/* Column Style */
+.col {
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid rgba(128, 128, 128, 0.5);
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Food Item */
+.fooditem {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.fooditem-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.fooditem img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.itemname {
+    font-size: 30px;
+}
+.button {
+    padding: 15px 30px; 
+    font-size: 18px; 
+    width: 100%; 
+    max-width: 200px; 
+    border: none;
+    background-color: #000; 
+    color: #fff; 
+    border-radius: 0.75rem; 
+    cursor: pointer;
+    display: block; 
+    margin: 20px auto; 
+}
+
+.button:hover {
+    background-color: #333; 
+}
+#login {
+    border: none;
+    height: 4px; 
+    background-color: black; 
+    margin: 20px 0; 
+}
+input[type="checkbox"] {
+    transform: scale(1.5);
+    margin: 10px;
+}
+.totalinfo label {
+    font-weight: bold;
+}
+
+
+/* Search Bar Container */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+/* Search Input Field */
+.search-container input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+/* Search Button */
+.search-container input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search-container input[type="submit"]:hover {
+    background-color: #333;
+}
+
+
+@media (max-width: 768px) {
+    .fooditem-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .fooditem img {
+        width: 100%;
+        height: auto;
+    }
+    .itemname {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .col {
+        padding: 5px;
+        margin: 5px;
+    }
+    .fooditem img {
+        width: 100%;
+        height: auto;
+    }
+    .itemname {
+        font-size: 18px;
+    }
+    input[type="checkbox"] {
+        transform: scale(1.3);
+    }
+}

@@ -1,0 +1,52 @@
+fieldset {
+    min-width: 260px;
+    margin: 30px auto;
+    width: 30%;
+    padding: 1rem;
+    border: 5px solid black; 
+    border-style: outset;
+    border-radius: 1px;
+    text-align: center; /* Center content within the fieldset */
+}
+
+input, textarea {    
+    padding: 0.5rem;
+    margin: 15px;    
+    border-radius: 0.75rem;
+}
+
+::placeholder{
+    font-weight: bold;
+    color: black;
+}
+
+#login {
+    border: none;
+    height: 4px; 
+    background-color: black; 
+    margin: 20px 0; 
+}
+
+#logon {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 20px; /* Optional: adjust spacing below the logo */
+}
+.button {
+    padding: 15px 30px; 
+    font-size: 18px; 
+    width: 100%; 
+    max-width: 200px; 
+    border: none;
+    background-color: #000; 
+    color: #fff; 
+    border-radius: 0.75rem; 
+    cursor: pointer;
+    display: block; 
+    margin: 20px auto; 
+}
+
+.button:hover {
+    background-color: #333; 
+}
